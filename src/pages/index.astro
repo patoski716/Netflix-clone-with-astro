@@ -1,0 +1,235 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TV from "../images/tv.png";
+import Mobile1 from "../images/mobile-1.jpg";
+import Mobile2 from "../images/mobile-2.png";
+
+---
+
+<Layout>
+    <section class="tabs">
+    </section>
+    <section class="tab-content">
+        <div class="container">
+           <!-- Tab Content 1 -->
+           <div id="tab-1-content" class="tab-content-item show">
+            <div class="tab-1-content-inner">
+                <div>
+                    <h1>Enjoy on your TV.</h1>
+                    <p class="text-lg">
+                        Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                    </p>
+                </div>
+                <img src={TV} alt="" />
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- tab 2 -->
+    <section class="tabs">
+    </section>
+    <section class="tab-content">
+        <div class="container">
+           <!-- Tab Content 1 -->
+           <div id="tab-1-content" class="tab-content-item show">
+            <div class="tab-1-content-inner">
+                <img src={Mobile1} alt="" />
+                <div>
+                    <h1>Download your shows to watch offline.</h1>
+                    <p class="text-lg">
+                        Save your favorites easily and always have something to watch.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- tab3 -->
+    <section class="tabs">
+        </section>
+        <section class="tab-content">
+            <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                       <h1> Watch everywhere.</h1> 
+                        <p class="text-lg">
+                            
+                            Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- tab4 -->
+        <section class="tabs">
+        </section>
+        <section class="tab-content">
+            <div class="container">
+               <!-- Tab Content 1 -->
+               <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <img src={Mobile2} alt="" />
+                    <div>
+                        <h1>Create profiles for kids.</h1>
+                        <p class="text-lg">
+                            Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- tab5 -->
+        <section class="tabs">
+        </section>
+
+
+        <div class="showcase-content" style="margin-bottom:20px ;">
+            <h1>Frequently Asked Questions</h1>
+            <!-- begin faq -->
+            <details>
+                <summary>What is Netflix?</summary>
+                <div>
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                </div>
+              </details>
+              <details>
+                <summary>How much does Netflix cost?</summary>
+                <div>
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.
+                </div>
+              </details>
+              <details>
+                <summary>Where can I watch?</summary>
+                <div>
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </div>
+              </details>
+              <details>
+                <summary>How do I cancel?</summary>
+                <div>
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                </div>
+              </details>
+
+              <details>
+                <summary>What can I watch on Netflix?</summary>
+                <div>
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+                </details>
+
+              <details>
+                <summary>Is Netflix good for kids?</summary>
+                <div>
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                </div>
+              </details>
+
+            <!-- end faq -->
+            <h3 style="margin-top: 20px;">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="started">
+            <input type="email" placeholder="  Email address"/>
+            <button class="btn btn-xl"
+                >Get started <i class="fas fa-chevron-right btn-icon"></i
+            ></button>
+        </div>
+
+        </div>
+
+    </Layout>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body{
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container h1{
+  color: #fff;
+  /* text-align: center; */
+}
+
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+  min-width: 1000px;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+}
+@media (max-width: 980px) {
+
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+  min-width: 600px;
+}
+}
+@media (max-width: 700px) {
+    
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+  min-width: 400px;
+}
+}
+
+@media (min-width:300px) and (max-width: 420px) {
+    
+    details{
+      background-color: #303030;
+      color: #fff;
+      font-size: 1.5rem;
+      min-width: 255px;
+    }
+    }  
+
+	
+</style>
